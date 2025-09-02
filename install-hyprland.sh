@@ -4,7 +4,7 @@ archinstall
 
 sudo pacman -Syu
 
-sudo pacman -S pipewire-alsa pipewire-jack pipewire-pulse kitty  wireplumber gstreamer gst-libav gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly ffmpeg --noconfirm
+sudo pacman -S pipewire-alsa pipewire-jack pipewire-pulse kitty wireplumber gstreamer gst-libav gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly ffmpeg --noconfirm
 
 # Instalar yay
 sudo pacman -S git --noconfirm
