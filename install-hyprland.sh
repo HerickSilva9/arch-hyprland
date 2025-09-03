@@ -1,3 +1,6 @@
+#!/bin/bash
+sudo -v
+
 # Update system packages
 sudo pacman -Syu
 
@@ -16,21 +19,21 @@ sudo pacman -S dolphin dolphin-plugins ark kio-admin polkit-kde-agent --noconfir
 # Install keyring manager
 sudo pacman -S gnome-keyring --noconfirm
 
-# Copy config file
-mkdir -p "$HOME/.config/hypr"
-cp hyprland.conf "$HOME/.config/hypr"
-
 # Install yay
-cd "$HOME"
-sudo pacman -S git --noconfirm
+pushd "$HOME"
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm
 cd "$HOME"
 rm -rf yay/
+popd
 
 # Install hyprland and related components
 sudo pacman -S hyprland hyprlock hypridle hyprcursor hyprpaper hyprpicker waybar rofi-wayland --noconfirm
+
+# Copy hyprland config file
+mkdir -p "$HOME/.config/hypr"
+cp hyprland.conf "$HOME/.config/hypr"
 
 # Install Qt wayland support
 sudo pacman -S qt5-wayland qt6-wayland --noconfirm
@@ -43,3 +46,9 @@ sudo pacman -S ttf-font-awesome ttf-jetbrains-mono-nerd ttf-opensans noto-fonts 
 
 # Install additional utilities
 sudo pacman -S dunst cliphist mpv pavucontrol --noconfirm
+
+# Install Apps
+yay -S google-chrome --noconfirm  # browser
+sudo pacman -S code --noconfirm   # VSCode
+
+sudo -k
