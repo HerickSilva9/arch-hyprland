@@ -1,5 +1,8 @@
 #!/bin/bash
 sudo -v
+while true; do sleep 60; sudo -v; done &
+SUDO_PID=$!
+trap 'kill $SUDO_PID; sudo -k' EXIT
 
 # Update system packages
 sudo pacman -Syu
@@ -42,7 +45,7 @@ sudo pacman -S qt5-wayland qt6-wayland --noconfirm
 sudo pacman -S xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xdg-user-dirs-gtk --noconfirm
 
 # Install fonts
-sudo pacman -S ttf-font-awesome ttf-jetbrains-mono-nerd ttf-opensans noto-fonts ttf-droid ttf-roboto gnome-keyring --noconfirm
+sudo pacman -S ttf-font-awesome ttf-jetbrains-mono-nerd ttf-opensans noto-fonts ttf-droid ttf-roboto --noconfirm
 
 # Install additional utilities
 sudo pacman -S dunst cliphist mpv pavucontrol --noconfirm
@@ -50,5 +53,3 @@ sudo pacman -S dunst cliphist mpv pavucontrol --noconfirm
 # Install Apps
 yay -S google-chrome --noconfirm  # browser
 sudo pacman -S code --noconfirm   # VSCode
-
-sudo -k
