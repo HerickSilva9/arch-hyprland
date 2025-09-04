@@ -24,6 +24,7 @@ sudo pacman -S gnome-keyring --noconfirm
 
 # Install yay
 pushd "$HOME"
+sudo pacman -S --needed base-devel git go
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm
