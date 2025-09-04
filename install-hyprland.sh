@@ -5,7 +5,7 @@ SUDO_PID=$!
 trap 'kill $SUDO_PID; sudo -k' EXIT
 
 # Update system packages
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 
 # Import Chaotic-AUR GPG key
 sudo pacman-key --recv-keys 3056513887B78AEB
