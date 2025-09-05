@@ -67,6 +67,6 @@ sudo pacman -S dunst cliphist mpv pavucontrol --noconfirm
 # popd
 
 # Install Apps
-sudo pacman -S yay --noconfirm    # yay
-sudo pacman -S code --noconfirm   # VSCode
-yay -S google-chrome --noconfirm  # browser
+sudo pacman -S yay --noconfirm              # yay
+yay -S visual-studio-code-bin --noconfirm   # VSCode
+yay -S google-chrome --noconfirm            # browser
