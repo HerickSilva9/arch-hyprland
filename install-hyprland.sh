@@ -22,6 +22,8 @@ if ! grep -q "\[chaotic-aur\]" /etc/pacman.conf; then
     sudo tee -a /etc/pacman.conf
 fi
 
+sudo pacman -Syu --noconfirm
+
 # Install audio servers and dependencies
 sudo pacman -S pipewire-alsa pipewire-jack pipewire-pulse wireplumber gstreamer --noconfirm
 
@@ -55,16 +57,6 @@ sudo pacman -S ttf-font-awesome ttf-jetbrains-mono-nerd ttf-opensans noto-fonts 
 
 # Install additional utilities
 sudo pacman -S dunst cliphist mpv pavucontrol --noconfirm
-
-# # Install yay
-# pushd "$HOME"
-# sudo pacman -S --needed base-devel git go
-# git clone https://aur.archlinux.org/yay.git
-# cd yay
-# makepkg -si --noconfirm
-# cd "$HOME"
-# rm -rf yay/
-# popd
 
 # Install Apps
 sudo pacman -S yay --noconfirm              # yay
