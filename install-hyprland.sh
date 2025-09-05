@@ -62,3 +62,8 @@ sudo pacman -S --noconfirm dunst cliphist mpv pavucontrol
 sudo pacman -S --noconfirm yay                      # yay
 sudo pacman -S --noconfirm visual-studio-code-bin   # VSCode
 sudo pacman -S --noconfirm google-chrome            # browser
+sudo pacman -S --noconfirm neofetch
+
+# Themes and icons
+sudo pacman -S --noconfirm breeze breeze5 breeze-gtk papirus-icon-theme
+sudo pacman -S --noconfirm nwg-look
