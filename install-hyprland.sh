@@ -63,6 +63,7 @@ sudo pacman -S --noconfirm yay                      # yay
 sudo pacman -S --noconfirm visual-studio-code-bin   # VSCode
 sudo pacman -S --noconfirm google-chrome            # browser
 sudo pacman -S --noconfirm neofetch
+sudo pacman -S --noconfirm tree
 
 # Themes and icons
 sudo pacman -S --noconfirm breeze breeze5 breeze-gtk papirus-icon-theme
