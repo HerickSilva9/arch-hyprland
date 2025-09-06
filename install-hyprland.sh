@@ -44,7 +44,7 @@ sudo pacman -S --noconfirm hyprland hyprlock hypridle hyprcursor hyprpaper hyprp
 
 # Copy hyprland config file
 mkdir -p "$HOME/.config/hypr"
-cp hyprland.conf "$HOME/.config/hypr"
+cp hyprland/hyprland.conf "$HOME/.config/hypr"
 
 # Install Qt wayland support
 sudo pacman -S --noconfirm qt5-wayland qt6-wayland
