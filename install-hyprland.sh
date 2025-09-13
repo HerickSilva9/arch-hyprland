@@ -31,3 +31,8 @@ sudo pacman -S --noconfirm visual-studio-code-bin   # VSCode
 sudo pacman -S --noconfirm google-chrome            # browser
 sudo pacman -S --noconfirm neofetch
 sudo pacman -S --noconfirm tree
+
+# Install docker
+sudo pacman -S --noconfirm docker docker-compose
+sudo systemctl disable docker.service
+sudo systemctl enable docker.socket
