@@ -45,26 +45,10 @@
     },
     "ntp": true,
     "packages": [
-        "dkms",
         "git",
-        "libva-nvidia-driver",
-        "mesa",
-        "nano",
-        "nvidia-open-dkms",
-        "nvidia-settings",
-        "nvidia-utils",
-        "lib32-nvidia-utils"
+        "nano"
     ],
     "parallel_downloads": 0,
-    "profile_config": {
-        "gfx_driver": null,
-        "greeter": null,
-        "profile": {
-            "custom_settings": {},
-            "details": [],
-            "main": "Minimal"
-        }
-    },
     "script": null,
     "services": [],
     "swap": true,
