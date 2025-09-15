@@ -48,6 +48,8 @@ sudo systemctl enable docker.socket
 
 # Install virt-manager
 sudo pacman -S --noconfirm virt-manager qemu-desktop libvirt edk2-ovmf vde2 bridge-utils openbsd-netcat dnsmasq dmidecode
-sudo systemctl enable libvirtd.service
+sudo systemctl enable --now libvirtd.service
+
+sudo systemctl enable --now wpa_supplicant@wlan0.service
 
 echo "Restart your pc to apply the changes."
