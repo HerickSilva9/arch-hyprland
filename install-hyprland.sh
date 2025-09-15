@@ -32,6 +32,15 @@ sudo pacman -S --noconfirm google-chrome            # browser
 sudo pacman -S --noconfirm neofetch
 sudo pacman -S --noconfirm tree
 
+# Fonts
+sudo pacman -S --noconfirm ttf-roboto noto-fonts-emoji noto-fonts ttf-open-sans ttf-droid
+
+# Waybar
+sudo pacman -S --noconfirm waybar
+sudo pacman -S --noconfirm otf-font-awesome
+sudo gpasswd -a $USER input && newgrp input
+sudo pacman -S --noconfirm power-profiles-daemon
+
 # Install docker
 sudo pacman -S --noconfirm docker docker-compose
 sudo systemctl disable docker.service
@@ -40,3 +49,5 @@ sudo systemctl enable docker.socket
 # Install virt-manager
 sudo pacman -S --noconfirm virt-manager qemu-desktop libvirt edk2-ovmf vde2 bridge-utils openbsd-netcat dnsmasq dmidecode
 sudo systemctl enable libvirtd.service
+
+echo "Restart your pc to apply the changes."
