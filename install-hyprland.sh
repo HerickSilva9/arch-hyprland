@@ -25,4 +25,8 @@ sudo systemctl enable docker.socket
 sudo pacman -S --noconfirm virt-manager qemu-desktop libvirt edk2-ovmf vde2 bridge-utils openbsd-netcat dnsmasq dmidecode
 sudo systemctl enable --now libvirtd.service
 
+# utils
+sudo pacman -S --noconfirm unzip zip archiso
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
 echo "Restart your pc to apply the changes."
