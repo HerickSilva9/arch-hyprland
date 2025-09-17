@@ -19,11 +19,10 @@ sudo pacman -S --noconfirm neofetch
 sudo pacman -S --noconfirm tree
 
 # Fonts
-sudo pacman -S --noconfirm ttf-roboto noto-fonts-emoji noto-fonts ttf-open-sans ttf-droid ttf-jetbrains-mono-nerd ttf-ubuntu-font-family
+sudo pacman -S --noconfirm ttf-roboto noto-fonts-emoji noto-fonts ttf-open-sans ttf-droid ttf-jetbrains-mono-nerd ttf-ubuntu-font-family otf-font-awesome
 
 # Waybar
 sudo pacman -S --noconfirm waybar
-sudo pacman -S --noconfirm otf-font-awesome
 sudo gpasswd -a $USER input && newgrp input
 sudo pacman -S --noconfirm power-profiles-daemon
 
@@ -36,6 +35,7 @@ sudo systemctl enable docker.socket
 sudo pacman -S --noconfirm virt-manager qemu-desktop libvirt edk2-ovmf vde2 bridge-utils openbsd-netcat dnsmasq dmidecode
 sudo systemctl enable --now libvirtd.service
 
+# wpa_supplicant
 sudo systemctl enable --now wpa_supplicant@wlan0.service
 
 # Wallpaper
