@@ -33,7 +33,7 @@ sudo pacman -S --noconfirm neofetch
 sudo pacman -S --noconfirm tree
 
 # Fonts
-sudo pacman -S --noconfirm ttf-roboto noto-fonts-emoji noto-fonts ttf-open-sans ttf-droid
+sudo pacman -S --noconfirm ttf-roboto noto-fonts-emoji noto-fonts ttf-open-sans ttf-droid ttf-jetbrains-mono-nerd ttf-ubuntu-font-family
 
 # Waybar
 sudo pacman -S --noconfirm waybar
