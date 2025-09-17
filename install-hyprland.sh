@@ -53,8 +53,9 @@ sudo systemctl enable --now libvirtd.service
 sudo systemctl enable --now wpa_supplicant@wlan0.service
 
 # Wallpaper
-pushd "$HOME"
+pushd /usr/share
 git clone https://github.com/dracula/wallpaper.git
 popd
+sudo pacman -S --noconfirm swaybg
 
 echo "Restart your pc to apply the changes."
