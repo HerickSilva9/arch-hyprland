@@ -13,3 +13,9 @@ pushd /usr/share
 git clone https://github.com/dracula/wallpaper.git
 popd
 sudo pacman -S --noconfirm swaybg
+
+# gtk - Dracula
+git clone https://github.com/dracula/gtk.
+mkdir -p .themes
+mv gtk/ Dracula/
+mv Dracula/ .themes/
