@@ -15,6 +15,7 @@ popd
 sudo pacman -S --noconfirm swaybg
 
 # gtk - Dracula
+sudo pacman -S --noconfirm lxappearance gtk-engine-murrine gnome-themes-extra
 git clone https://github.com/dracula/gtk.
 mkdir -p .themes
 mv gtk/ Dracula/
