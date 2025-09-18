@@ -20,3 +20,4 @@ git clone https://github.com/dracula/gtk.
 mkdir -p .themes
 mv gtk/ Dracula/
 mv Dracula/ .themes/
+gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
