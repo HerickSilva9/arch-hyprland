@@ -13,8 +13,6 @@ bash ./ui-setup.sh
 # Install Apps
 sudo pacman -S --noconfirm visual-studio-code-bin   # VSCode
 sudo pacman -S --noconfirm google-chrome            # browser
-sudo pacman -S --noconfirm neofetch
-sudo pacman -S --noconfirm tree
 
 # Install docker
 sudo pacman -S --noconfirm docker docker-compose
@@ -26,7 +24,7 @@ sudo pacman -S --noconfirm virt-manager qemu-desktop libvirt edk2-ovmf vde2 brid
 sudo systemctl enable --now libvirtd.service
 
 # utils
-sudo pacman -S --noconfirm unzip zip archiso
+sudo pacman -S --noconfirm neofetch tree unzip zip archiso
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 echo "Restart your pc to apply the changes."
