@@ -18,6 +18,7 @@ sudo pacman -S --noconfirm google-chrome            # browser
 sudo pacman -S --noconfirm docker docker-compose
 sudo systemctl disable docker.service
 sudo systemctl enable docker.socket
+sudo groupadd docker &&  sudo usermod -aG docker $USER
 
 # Install virt-manager
 sudo pacman -S --noconfirm virt-manager qemu-desktop libvirt edk2-ovmf vde2 bridge-utils openbsd-netcat dnsmasq dmidecode
