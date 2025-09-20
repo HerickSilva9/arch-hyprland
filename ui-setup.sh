@@ -21,3 +21,7 @@ mkdir -p .themes
 mv gtk/ Dracula/
 mv Dracula/ .themes/
 gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
+
+# QT
+sudo pacman -S --noconfirm kvantum kvantum-qt5
+sudo pacman -S --noconfirm qt5ct qt6ct
